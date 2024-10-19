@@ -26,7 +26,7 @@ def scrape_product_reviews(url):
 url = "https://www.example.com/category-page"
 data = scrape_product_reviews(url)
 
-# Save the data to a CSV file
+# Save the data to a CSV file.
 with open("ecommerce_product_reviews.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     writer.writerow(["Product Name", "Product Price", "Average Rating", "Number of Reviews", "Review Text"])
